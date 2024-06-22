@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: ease-out 200ms;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: ease-out 200ms;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(https://img2.goodfon.com/original/1440x900/2/32/islandi-stoksnes-gory-nebo-zakat-pliazh-fotograf.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 130%;
+  background-position: 50% top;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+main {
+  width: 100%;
+  height: 110vh;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 50px 70px;
+}
+main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #fff;
+}
+main .header .logo {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+main .header nav {
+  display: flex;
+  align-items: center;
+  height: 33px;
+}
+main .header nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+}
+main .header nav a:not(:last-child) {
+  margin-right: 80px;
+}
+main .header nav a:hover {
+  border: 1px solid #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 100px;
+}
+main .header nav a.active {
+  border: 1px solid #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 100px;
+}
+main .header .right .search svg {
+  fill: #fff;
+  font-size: 23px;
+  cursor: pointer;
+}
+main .hero {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+main .hero-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70px;
+}
+main .hero-left a:not(:last-child) {
+  margin-bottom: 40px;
+}
+main .hero-left a svg {
+  font-size: 20px;
+  fill: #fff;
+}
+main .hero-content {
+  flex: 1;
+  text-align: center;
+}
+main .hero-content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+main .hero-content .title h1 {
+  font-size: 133px;
+  font-weight: 900;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.55);
+}
+main .hero-content .title img {
+  position: absolute;
+  top: 120px;
+  left: -35px;
+  pointer-events: none;
+  width: 100%;
+  max-width: 441px;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10%;
+  }
+  100% {
+    left: 0;
+  }
+}
+main .hero-content .title h2 {
+  width: 60%;
+  font-size: 37px;
+  font-weight: 600;
+  z-index: 1;
+  margin-top: -27px;
+}
+main .hero-content .title button {
+  height: 40px;
+  background-color: #dd3012;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+main .hero-right {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+  text-orientation: mixed;
+}
+main .footer {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+}
+main .footer .item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 310px;
+  height: 115px;
+  color: #fff;
+  padding: 20px 30px;
+  position: relative;
+}
+main .footer .item.active {
+  background: rgba(0, 0, 0, 0.11);
+}
+main .footer .item h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+main .footer .item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+main .footer .item .cancel-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+main .footer .item .cancel-btn svg {
+  fill: #fff;
+  font-size: 14px;
+}
+
+.owner-coding {
+  right: 1em;
+}
+.owner-design {
+  left: 1em;
+}
+.owner-design, .owner-coding {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  color: #fff;
+  bottom: 1em;
+  text-decoration: none;
+  font-size: 12px;
+}
+.owner-design .avatar, .owner-coding .avatar {
+  width: 26px;
+  height: 26px;
+  margin: 0 5px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.owner-design .avatar img, .owner-coding .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
